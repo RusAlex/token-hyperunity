@@ -9,7 +9,7 @@ module.exports = async function main(callback) {
       .toString()
       .split("\r\n")
       .map((x, i) => {
-        if (i < 2) {
+        if (i < 3) {
           return;
         }
         const [address, amount] = x.replace(/"/g, "").split(",");
